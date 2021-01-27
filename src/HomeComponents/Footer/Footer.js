@@ -37,7 +37,7 @@ const reviews = [
     occupation: "UIE Instructor",
     connection: "Teacher",
     quote:
-      "Kittie was one of the strongest students I've had the pleasure of teaching. She rose to every challenge put before her, and refused to settle for anything less than excellence. In addition to her eye for design and knack for programming, her interpersonal skills and work ethic made her a valuable asset to every team she was a part of",
+      "Kittie was one of the strongest students I've had the pleasure of teaching. She rose to every challenge put before her, and refused to settle for anything less than excellence. In addition to her eye for design and knack for programming, her interpersonal skills and work ethic made her a valuable asset to every team she was a part of.",
   },
 ];
 

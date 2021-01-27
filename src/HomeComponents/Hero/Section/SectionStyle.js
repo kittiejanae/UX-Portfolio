@@ -8,7 +8,7 @@ export const SectionWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vw;
+  margin-top: 4vw;
 `;
 
 export const MockUpImageWrapper = styled(Link)`

@@ -194,6 +194,7 @@ export const SkillsUl = styled.ul`
 export const SkillsLi = styled.li`
   width: 30vw;
   color: white;
+  text-align: left;
 
   @media screen and (min-width: 786px) {
     width: 12vw;
@@ -278,8 +279,10 @@ export const JobTitle = styled.h2`
 
 export const ExpDetails = styled.ul`
   color: white;
+  text-align: left;
 `;
 
 export const ExpItem = styled.li`
   color: white;
+  text-align: left;
 `;

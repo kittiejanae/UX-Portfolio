@@ -8,7 +8,7 @@ export const HeroWrapper = styled.div`
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  margin-top: 6vw;
+  margin-top: 2vw;
   top: 0;
   left: 0;
 `;
@@ -17,7 +17,7 @@ export const HeroBg = styled.video`
   margin: 0;
   padding: 0;
   width: 80vw;
-  height: 100%;
+  height: 38vw;
   -o-object-fit: cover;
   object-fit: cover;
   background: black;
@@ -29,7 +29,7 @@ export const HeroBg = styled.video`
 
 export const HeroAboutWrapper = styled.div`
   width: 78%;
-  height: 34vw;
+  height: 32vw;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -45,15 +45,15 @@ export const HeroAboutWrapper = styled.div`
 `;
 
 export const HeroImage = styled.img`
-  width: auto;
-  height: 32vw;
+  width: 32vw;
+  height: auto;
   border-radius: 12px;
   box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5),
     -4px -4px 12px rgba(95, 80, 80, 0.5);
 
   @media screen and (min-width: 786px) {
     transition: 0.8s all ease;
-    width: 35vw;
+    width: 32vw;
     height: auto;
   }
 `;

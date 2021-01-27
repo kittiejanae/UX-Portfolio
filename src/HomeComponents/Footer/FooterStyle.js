@@ -7,7 +7,7 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 12vw;
+  margin-top: 6vw;
   padding: 0;
 `;
 
