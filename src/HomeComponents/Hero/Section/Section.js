@@ -16,12 +16,13 @@ import {
   // WordH2,
   // WordP,
   // ImageContent,
-  // SectionImage,
 } from "./SectionStyle";
 import heirloomMockup from "../../../images/heirloomMockup.png";
 import thlogo from "../../../images/thlogo.png";
 import alltoneslogo from "../../../images/alltoneslogo.png";
+import adultedlogo from "../../../images/adultedlogo.png";
 // import Slider from "react-slick";
+// import ImageGallery from "react-image-gallery";
 
 const Section = () => {
   // const researchImages = [
@@ -47,43 +48,43 @@ const Section = () => {
   //     title: "Problem",
   //     textContent:
   //       "A home chef is looking for a simple and intuitive way to combine, organize, and quickly access all of their recipes; both personally created recipes and favorites sourced from around the web.",
-  //     slideImage: `${require("../../../images/section1.1.png").default}`,
+  //     slideGallery: [`${require("../../../images/section1.1.png").default}`],
   //   },
   //   {
   //     title: "Product Research",
   //     textContent:
   //       "I researched various recipe apps and learned that users would value a higher level of customization and are drawn to the features that allow them to store personal/family recipes.",
-  //     slideImage: "",
+  //     slideGallery: [],
   //   },
   //   {
   //     title: "User Research",
   //     textContent:
   //       "I conducted an online survey that included inquiries into each participant’s skill level, the decisions they were making as they cooked, their cooking histories and any emotional attachments that they have with food, cooking and/or certain recipes.",
-  //     slideImage: "",
+  //     slideGallery: [],
   //   },
   //   {
   //     title: "Key Insights",
   //     textContent:
   //       "Many are looking for ways to preserve and share their family recipes and their own special recipes easily. Also, giving the ability archive recipe creation attempts and recipe adjustments will prove valuable.",
-  //     slideImage: "",
+  //     slideGallery: [],
   //   },
   //   {
   //     title: "User Persona 1: Meg",
   //     textContent:
   //       "Meg is a single, 30 year old woman who enjoys creating her own recipes and cooking meals for her family and friends. Meg wants to save all the recipes she’s created over the years and document some of the successful dishes she’s created herself.",
-  //     slideImage: `${require("../../../images/meg.jpg").default}`,
+  //     slideGallery: [`${require("../../../images/meg.jpg").default}`],
   //   },
   //   {
   //     title: "User Persona 2:Sam",
   //     textContent:
   //       "Sam is a married, 32 year old man who enjoys creating traditional, family recipes and trying out recipes from various sources. Sam wants to see at a glance which recipes were a hit in his household.",
-  //     slideImage: `${require("../../../images/sam.jpg").default}`,
+  //     slideGallery: [`${require("../../../images/sam.jpg").default}`],
   //   },
   //   {
   //     title: "LoFi Wire Frames",
   //     textContent:
   //       "Sam is a married, 32 year old man who enjoys creating traditional, family recipes and trying out recipes from various sources. Sam wants to see at a glance which recipes were a hit in his household.",
-  //     slideImage: "",
+  //     slideGallery: [],
   //   },
   // ];
 
@@ -104,10 +105,6 @@ const Section = () => {
                   <WordP>{projectSlide.textContent}</WordP>
                 </WordContent>
                 <ImageContent>
-                  <SectionImage
-                    src={projectSlide.slideImage}
-                    type="image/png"
-                  />
                   <ImageGallery
                     items={projectSlide.slideGallery}
                     autoPlay={true}
@@ -196,7 +193,7 @@ const Section = () => {
       </SectionWrapper3>
       <SectionWrapper4>
         <MockUpImageWrapper to="/AllTones" target="_blank">
-          <MockupImage src={alltoneslogo} type="image/png" />
+          <MockupImage src={adultedlogo} type="image/png" />
           <MockUpDetails>UIE Project: Adulted</MockUpDetails>
         </MockUpImageWrapper>
 
