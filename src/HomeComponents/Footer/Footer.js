@@ -39,6 +39,14 @@ const reviews = [
     quote:
       "Kittie was one of the strongest students I've had the pleasure of teaching. She rose to every challenge put before her, and refused to settle for anything less than excellence. In addition to her eye for design and knack for programming, her interpersonal skills and work ethic made her a valuable asset to every team she was a part of.",
   },
+  {
+    name: "Matthew Conroy",
+    personPhoto: `${require("../../images/matt.jpeg").default}`,
+    occupation: "UX/UI Tutor",
+    connection: "Tutor",
+    quote:
+      "Kittie is a hard-working and talented developer.  When seeking assistance from a coach, she was easily able to articulate where any problems in her code were coming from and also understood how to implement any suggested changes.",
+  },
 ];
 
 const Footer = () => {

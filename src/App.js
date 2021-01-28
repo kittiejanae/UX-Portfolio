@@ -26,6 +26,22 @@ function App() {
             return null;
           }}
         />
+        <Route
+          path="/TacticalHealthcare"
+          component={() => {
+            window.location =
+              "https://www.figma.com/proto/lAGZOXMPiApv4Qf5VcSqsr/Tactical-Healthcare-Copy?node-id=17%3A33&viewport=-775%2C11%2C0.08140715211629868&scaling=scale-down";
+            return null;
+          }}
+        />
+        <Route
+          path="/AllTones"
+          component={() => {
+            window.location =
+              "https://www.figma.com/proto/7m47Y91cUg7q5QsghKcm1u/All-Tones?node-id=1%3A38&viewport=140%2C350%2C0.09226298332214355&scaling=scale-down";
+            return null;
+          }}
+        />
       </Switch>
     </Router>
   );

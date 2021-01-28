@@ -25,6 +25,7 @@ export const HeroBg = styled.video`
   justify-content: center;
   align-items: center;
   border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 `;
 
 export const HeroAboutWrapper = styled.div`

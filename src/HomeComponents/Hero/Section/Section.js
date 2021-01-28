@@ -4,6 +4,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import "react-image-gallery/styles/css/image-gallery.css";
 import {
   SectionWrapper,
+  SectionWrapper2,
+  SectionWrapper3,
+  SectionWrapper4,
   MockupImage,
   MockUpDetails,
   MockUpImageWrapper,
@@ -16,6 +19,8 @@ import {
   // SectionImage,
 } from "./SectionStyle";
 import heirloomMockup from "../../../images/heirloomMockup.png";
+import thlogo from "../../../images/thlogo.png";
+import alltoneslogo from "../../../images/alltoneslogo.png";
 // import Slider from "react-slick";
 
 const Section = () => {
@@ -87,8 +92,9 @@ const Section = () => {
       <SectionWrapper>
         <MockUpImageWrapper to="/Heirloom" target="_blank">
           <MockupImage src={heirloomMockup} type="image/png" />
+          <MockUpDetails>UX/UIE Case Study: Heirloom</MockUpDetails>
         </MockUpImageWrapper>
-        <MockUpDetails>UX/UI Case Study: Heirloom</MockUpDetails>
+
         <ProjectInfoBox>
           {/* <Slider>
             {projectSlides.map((projectSlide, index) => (
@@ -118,6 +124,111 @@ const Section = () => {
           </Slider> */}
         </ProjectInfoBox>
       </SectionWrapper>
+      <SectionWrapper2>
+        <MockUpImageWrapper to="/TacticalHealthcare" target="_blank">
+          <MockupImage src={thlogo} type="image/png" />
+          <MockUpDetails>UX/UI Case Study: Tactical Healthcare</MockUpDetails>
+        </MockUpImageWrapper>
+
+        <ProjectInfoBox>
+          {/* <Slider>
+            {projectSlides.map((projectSlide, index) => (
+              <SliderDiv>
+                <WordContent>
+                  <WordH2>{projectSlide.title}</WordH2>
+                  <WordP>{projectSlide.textContent}</WordP>
+                </WordContent>
+                <ImageContent>
+                  <SectionImage
+                    src={projectSlide.slideImage}
+                    type="image/png"
+                  />
+                  <ImageGallery
+                    items={projectSlide.slideGallery}
+                    autoPlay={true}
+                    showThumbnails={false}
+                    showNav={false}
+                    showPlayButton={false}
+                    showFullscreenButton={false}
+                    disableSwipe={true}
+                    slideInterval={3500}
+                  />
+                </ImageContent>
+              </SliderDiv>
+            ))}
+          </Slider> */}
+        </ProjectInfoBox>
+      </SectionWrapper2>
+      <SectionWrapper3>
+        <MockUpImageWrapper to="/AllTones" target="_blank">
+          <MockupImage src={alltoneslogo} type="image/png" />
+          <MockUpDetails>UX/UI Case Study: All Tones</MockUpDetails>
+        </MockUpImageWrapper>
+
+        <ProjectInfoBox>
+          {/* <Slider>
+            {projectSlides.map((projectSlide, index) => (
+              <SliderDiv>
+                <WordContent>
+                  <WordH2>{projectSlide.title}</WordH2>
+                  <WordP>{projectSlide.textContent}</WordP>
+                </WordContent>
+                <ImageContent>
+                  <SectionImage
+                    src={projectSlide.slideImage}
+                    type="image/png"
+                  />
+                  <ImageGallery
+                    items={projectSlide.slideGallery}
+                    autoPlay={true}
+                    showThumbnails={false}
+                    showNav={false}
+                    showPlayButton={false}
+                    showFullscreenButton={false}
+                    disableSwipe={true}
+                    slideInterval={3500}
+                  />
+                </ImageContent>
+              </SliderDiv>
+            ))}
+          </Slider> */}
+        </ProjectInfoBox>
+      </SectionWrapper3>
+      <SectionWrapper4>
+        <MockUpImageWrapper to="/AllTones" target="_blank">
+          <MockupImage src={alltoneslogo} type="image/png" />
+          <MockUpDetails>UIE Project: Adulted</MockUpDetails>
+        </MockUpImageWrapper>
+
+        <ProjectInfoBox>
+          {/* <Slider>
+            {projectSlides.map((projectSlide, index) => (
+              <SliderDiv>
+                <WordContent>
+                  <WordH2>{projectSlide.title}</WordH2>
+                  <WordP>{projectSlide.textContent}</WordP>
+                </WordContent>
+                <ImageContent>
+                  <SectionImage
+                    src={projectSlide.slideImage}
+                    type="image/png"
+                  />
+                  <ImageGallery
+                    items={projectSlide.slideGallery}
+                    autoPlay={true}
+                    showThumbnails={false}
+                    showNav={false}
+                    showPlayButton={false}
+                    showFullscreenButton={false}
+                    disableSwipe={true}
+                    slideInterval={3500}
+                  />
+                </ImageContent>
+              </SliderDiv>
+            ))}
+          </Slider> */}
+        </ProjectInfoBox>
+      </SectionWrapper4>
     </>
   );
 };

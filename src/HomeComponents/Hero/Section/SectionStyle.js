@@ -9,12 +9,62 @@ export const SectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 4vw;
+
+  @media screen and (min-width: 786px) {
+    flex-direction: row;
+    margin-top: 7vw;
+  }
+`;
+
+export const SectionWrapper2 = styled.div`
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+
+  @media screen and (min-width: 786px) {
+    flex-direction: row-reverse;
+  }
+`;
+
+export const SectionWrapper3 = styled.div`
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+
+  @media screen and (min-width: 786px) {
+    flex-direction: row;
+  }
+`;
+
+export const SectionWrapper4 = styled.div`
+  width: 80vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4vw;
+
+  @media screen and (min-width: 786px) {
+    flex-direction: row-reverse;
+  }
 `;
 
 export const MockUpImageWrapper = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
 `;
 
 export const MockupImage = styled.img`
@@ -27,10 +77,19 @@ export const MockupImage = styled.img`
     tranisition: all 0.2 ease-in-out;
     cursor: pointer;
   }
+
+  @media screen and (min-width: 786px) {
+    margin: 0.5vw;
+  }
 `;
 
 export const MockUpDetails = styled.h2`
   text-align: center;
+
+  @media screen and (min-width: 786px) {
+    font-size: 2.4vw;
+    line-height: 2.6vw;
+  }
 `;
 
 export const ProjectInfoBox = styled.ul`
@@ -46,6 +105,11 @@ export const ProjectInfoBox = styled.ul`
   border-radius: 12px;
   padding: 0;
   margin: 0;
+
+  @media screen and (min-width: 786px) {
+    width: 140vw;
+    height: 25vw;
+  }
 `;
 
 export const SliderDiv = styled.li`

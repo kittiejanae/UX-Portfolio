@@ -58,7 +58,7 @@ export const BoxWrapper = styled.div`
   margin-bottom: 6vw;
 
   @media screen and (min-width: 786px) {
-    height: 15vw;
+    height: 18vw;
     margin-bottom: 1vw;
   }
 `;
@@ -140,6 +140,19 @@ export const TextBox = styled.div`
   -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
+  align-items: center;
+`;
+
+export const LastTextBox = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: rgba(13, 66, 21, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
   overflow: scroll;
 `;
@@ -156,7 +169,7 @@ export const TextContent = styled.p`
   @media screen and (min-width: 786px) {
     font-size: 1.5vw;
     line-height: 1.7vw;
-    margin-top: 2vw;
+    margin-top: 0;
   }
 `;
 
@@ -186,7 +199,7 @@ export const SkillsUl = styled.ul`
 
   @media screen and (min-width: 786px) {
     width: 80%;
-    height: 5vw;
+    height: 15vw;
     margin: 0;
   }
 `;
@@ -197,7 +210,7 @@ export const SkillsLi = styled.li`
   text-align: left;
 
   @media screen and (min-width: 786px) {
-    width: 12vw;
+    width: 15vw;
   }
 `;
 
@@ -239,7 +252,6 @@ export const SchoolIcon = styled.img`
   @media screen and (min-width: 786px) {
     width: 7vw;
     height: auto;
-    margin-top: 2vw;
   }
 `;
 export const SchoolName = styled.h2`

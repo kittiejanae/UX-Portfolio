@@ -10,6 +10,7 @@ import {
   LastBoxWrapper,
   DownloadBtn,
   TextBox,
+  LastTextBox,
   TextContent,
   SkillsUl,
   SkillsLi,
@@ -171,7 +172,7 @@ const ResumePage = () => {
           </VideoBox>
         </FirstLastBoxWrapper>
         <LastBoxWrapper onClick={handleFlip}>
-          <TextBox>
+          <LastTextBox>
             <LastTextContent>
               <ExperienceWrap>
                 <ExpHeader>
@@ -312,7 +313,7 @@ const ResumePage = () => {
                 </ExpDetails>
               </ExperienceWrap>
             </LastTextContent>
-          </TextBox>
+          </LastTextBox>
         </LastBoxWrapper>
       </ReactCardFlip>
     </ResumeWrapper>

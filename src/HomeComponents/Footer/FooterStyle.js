@@ -16,6 +16,11 @@ export const FooterH1 = styled.h1`
   height: 10vw;
   margin: 0;
   padding: 0;
+
+  @media screen and (min-width: 786px) {
+    font-size: 2.7vw;
+    line-height: 2.9vw;
+  }
 `;
 
 export const ReviewsList = styled.ul`
@@ -66,8 +71,8 @@ export const PersonImage = styled.img`
   height: 12.5vw;
   padding: 0;
   margin-left: 2vw;
-  -o-object-fit: fill;
-  object-fit: fill;
+  -o-object-fit: cover;
+  object-fit: cover;
   background: black;
   box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5),
     -4px -4px 12px rgba(95, 80, 80, 0.5);
@@ -83,8 +88,18 @@ export const PersonTitle = styled.h2`
   text-align: left;
   width: 100%;
   margin: 0;
+
+  @media screen and (min-width: 786px) {
+    font-size: 2.3vw;
+    line-height: 2.5vw;
+  }
 `;
 export const PersonReview = styled.p`
   text-align: left;
   width: 100%;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+  }
 `;

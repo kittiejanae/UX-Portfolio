@@ -1,6 +1,6 @@
 import React from "react";
 import backToTop from "../images/backToTop.svg";
-import { BackToTopImage } from "./BackToTopStyle";
+import { BackToTopImage, BackToTopWrapper } from "./BackToTopStyle";
 import { animateScroll as scroll } from "react-scroll";
 
 const BackToTop = () => {
@@ -10,12 +10,9 @@ const BackToTop = () => {
 
   return (
     <>
-      <BackToTopImage
-        src={backToTop}
-        type="image/svg"
-        to="/"
-        onClick={toggleHome}
-      />
+      <BackToTopWrapper to="/" onClick={toggleHome}>
+        <BackToTopImage src={backToTop} type="image/svg" />
+      </BackToTopWrapper>
     </>
   );
 };

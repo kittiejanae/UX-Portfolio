@@ -38,7 +38,10 @@ export const FormWrapper = styled.form`
   width: 60vw;
   height: 55%;
   border-radius: 12px;
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +62,7 @@ export const EmailInput = styled.input`
   margin-right: 4vw;
   margin-bottom: 2vw;
   width: 80%;
+  height: 2vw;
   border-radius: 4px;
   background: #0d4215;
   color: white;
@@ -101,8 +105,7 @@ export const SubmitButton = styled.button`
   color: white;
   padding: 1.5vw;
   border: none;
-  box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5),
-    -4px -4px 12px rgba(95, 80, 80, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 
   &:focus {
     outline: none;
@@ -127,11 +130,14 @@ export const FormLabel = styled.label`
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 2.1vw;
+  line-height: 2.3vw;
   margin-bottom: 2vw;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 1vw;
+    transition: 0.8s all ease;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
   }
 `;
