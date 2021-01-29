@@ -40,7 +40,6 @@ const ResumePage = () => {
   const [isFlipped, setIsFlipped] = useState([false, false, false, false]);
 
   const handleFlip = (flipIndex) => {
-    console.log(flipIndex);
     setIsFlipped((prevIsFlipped) =>
       prevIsFlipped.map((flipped, i) => (i === flipIndex ? !flipped : flipped))
     );

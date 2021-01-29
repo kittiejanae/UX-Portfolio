@@ -52,7 +52,7 @@ export const ExperienceWrapper = styled.div`
 `;
 
 export const BoxWrapper = styled.div`
-  width: 100%;
+  width: 80vw;
   height: 35vw;
   border-radius: 12px;
   margin-bottom: 6vw;
@@ -64,7 +64,7 @@ export const BoxWrapper = styled.div`
 `;
 
 export const FirstLastBoxWrapper = styled.div`
-  width: 100%;
+  width: 80vw;
   height: 60vw;
   border-radius: 12px;
   margin-bottom: 6vw;
