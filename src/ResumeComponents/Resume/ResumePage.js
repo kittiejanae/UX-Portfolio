@@ -37,22 +37,24 @@ import aia from "../../images/aia.png";
 import agnes from "../../images/agnes.svg";
 
 const ResumePage = () => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState([false, false, false, false]);
 
-  const handleFlip = (id) => {
-    setIsFlipped(!isFlipped);
+  const handleFlip = (flipIndex) => {
+    console.log(flipIndex);
+    setIsFlipped((prevIsFlipped) =>
+      prevIsFlipped.map((flipped, i) => (i === flipIndex ? !flipped : flipped))
+    );
   };
   return (
     <ResumeWrapper>
       <DownloadBtn>Download My Resume</DownloadBtn>
       <ReactCardFlip
-        isFlipped={isFlipped}
+        isFlipped={isFlipped[0]}
         flipDirection="vertical"
         flipSpeedBackToFront={1}
         flipSpeedFrontToBack={1}
-        id={1}
       >
-        <BoxWrapper handleFlip={handleFlip} onClick={() => handleFlip(1)}>
+        <BoxWrapper onClick={() => handleFlip(0)}>
           <VideoBox>
             <HoverMaterial>
               <ContentBox>About Me</ContentBox>
@@ -60,7 +62,7 @@ const ResumePage = () => {
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
-        <BoxWrapper onClick={handleFlip}>
+        <BoxWrapper onClick={() => handleFlip(0)}>
           <TextBox>
             <TextContent>
               I am a lifelong creative learner with a passion for creating
@@ -68,20 +70,20 @@ const ResumePage = () => {
               certificate in UX Design with more than 5 years experience in the
               entertainment industry in various forms. I am interested in
               wireframing, prototyping and working with a team to create
-              innovative products. I create designs to improve oversaturated
+              innovative products. I create designs to improve oversatflipIrated
               markets and overall user experience.
             </TextContent>
           </TextBox>
         </BoxWrapper>
       </ReactCardFlip>
       <ReactCardFlip
-        isFlipped={isFlipped}
+        isFlipped={isFlipped[1]}
         flipDirection="vertical"
         flipSpeedBackToFront={1}
         flipSpeedFrontToBack={1}
         id={2}
       >
-        <BoxWrapper onClick={handleFlip}>
+        <BoxWrapper onClick={() => handleFlip(1)}>
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Skills</ContentBox>
@@ -89,7 +91,7 @@ const ResumePage = () => {
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
-        <BoxWrapper onClick={handleFlip}>
+        <BoxWrapper onClick={() => handleFlip(1)}>
           <TextBox>
             <TextContent>
               <SkillsUl>
@@ -115,13 +117,13 @@ const ResumePage = () => {
         </BoxWrapper>
       </ReactCardFlip>
       <ReactCardFlip
-        isFlipped={isFlipped}
+        isFlipped={isFlipped[2]}
         flipDirection="vertical"
         flipSpeedBackToFront={1}
         flipSpeedFrontToBack={1}
         id={3}
       >
-        <BoxWrapper onClick={handleFlip}>
+        <BoxWrapper onClick={() => handleFlip(2)}>
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Education</ContentBox>
@@ -129,7 +131,7 @@ const ResumePage = () => {
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
-        <BoxWrapper onClick={handleFlip}>
+        <BoxWrapper onClick={() => handleFlip(2)}>
           <TextBox>
             <TextContent>
               <Schools>
@@ -157,13 +159,12 @@ const ResumePage = () => {
         </BoxWrapper>
       </ReactCardFlip>
       <ReactCardFlip
-        isFlipped={isFlipped}
+        isFlipped={isFlipped[3]}
         flipDirection="vertical"
         flipSpeedBackToFront={1}
         flipSpeedFrontToBack={1}
-        id={4}
       >
-        <FirstLastBoxWrapper onClick={handleFlip}>
+        <FirstLastBoxWrapper onClick={() => handleFlip(3)}>
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Experience</ContentBox>
@@ -171,7 +172,7 @@ const ResumePage = () => {
             </HoverMaterial>
           </VideoBox>
         </FirstLastBoxWrapper>
-        <LastBoxWrapper onClick={handleFlip}>
+        <LastBoxWrapper onClick={() => handleFlip(3)}>
           <LastTextBox>
             <LastTextContent>
               <ExperienceWrap>
