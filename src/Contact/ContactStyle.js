@@ -19,7 +19,7 @@ export const BackgroundWrapper = styled.div`
   }
 `;
 
-export const VideoBg2 = styled.video`
+export const VideoBg2 = styled.img`
   margin: 0;
   padding: 0;
   width: 100%;

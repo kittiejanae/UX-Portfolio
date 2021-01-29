@@ -28,10 +28,10 @@ import {
   FirstLastBoxWrapper,
   LastTextContent,
 } from "./ResumeElements";
-import resumevid1 from "../../videos/resumevid1.mp4";
-import resumevid2 from "../../videos/resumevid2.mp4";
-import resumevid3 from "../../videos/resumevid3.mp4";
-import resumevid4 from "../../videos/resumevid4.mp4";
+import resumevid1 from "../../videos/resumevid1.gif";
+import resumevid2 from "../../videos/resumevid2.gif";
+import resumevid3 from "../../videos/resumevid3.gif";
+import resumevid4 from "../../videos/resumevid4.gif";
 import kenzie from "../../images/kenzie.png";
 import aia from "../../images/aia.png";
 import agnes from "../../images/agnes.svg";
@@ -58,7 +58,7 @@ const ResumePage = () => {
           <VideoBox>
             <HoverMaterial>
               <ContentBox>About Me</ContentBox>
-              <VideoBg autoPlay loop muted src={resumevid1} type="video/mp4" />
+              <VideoBg autoPlay loop muted src={resumevid1} type="image/gif" />
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
@@ -87,7 +87,7 @@ const ResumePage = () => {
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Skills</ContentBox>
-              <VideoBg autoPlay loop muted src={resumevid2} type="video/mp4" />
+              <VideoBg autoPlay loop muted src={resumevid2} type="image/gif" />
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
@@ -127,7 +127,7 @@ const ResumePage = () => {
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Education</ContentBox>
-              <VideoBg autoPlay loop muted src={resumevid3} type="video/mp4" />
+              <VideoBg autoPlay loop muted src={resumevid3} type="image/gif" />
             </HoverMaterial>
           </VideoBox>
         </BoxWrapper>
@@ -168,7 +168,7 @@ const ResumePage = () => {
           <VideoBox>
             <HoverMaterial>
               <ContentBox>Experience</ContentBox>
-              <VideoBg autoPlay loop muted src={resumevid4} type="video/mp4" />
+              <VideoBg autoPlay loop muted src={resumevid4} type="image/gif" />
             </HoverMaterial>
           </VideoBox>
         </FirstLastBoxWrapper>

@@ -3,7 +3,7 @@ import AboutPhoto from "../../../images/me.png";
 import linkedIcon from "../../../images/linkedIcon.svg";
 import contactIcon from "../../../images/contactIcon.svg";
 import resumeIcon from "../../../images/resumeIcon.svg";
-import herovid from "../../../videos/herovid.mp4";
+import herovid from "../../../videos/herovid.gif";
 import {
   HeroWrapper,
   HeroImage,
@@ -19,7 +19,7 @@ import {
 const Hero = () => {
   return (
     <HeroWrapper>
-      <HeroBg autoPlay loop muted src={herovid} type="video/mp4" />
+      <HeroBg autoPlay loop muted src={herovid} type="image/gif" />
       <HeroAboutWrapper>
         <HeroImage src={AboutPhoto} type="image/png" />
         <AboutWrapper>

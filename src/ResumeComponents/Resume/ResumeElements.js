@@ -108,7 +108,7 @@ export const HoverMaterial = styled.div`
   align-items: center;
 `;
 
-export const VideoBg = styled.video`
+export const VideoBg = styled.img`
   margin: 0;
   padding: 0;
   width: 100%;

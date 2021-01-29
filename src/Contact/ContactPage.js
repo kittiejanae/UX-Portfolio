@@ -1,5 +1,5 @@
 import React from "react";
-import contactvid from "../videos/contactvid.mp4";
+import contactvid from "../videos/contactvid.gif";
 import {
   ContactWrapper,
   BackgroundWrapper,
@@ -33,7 +33,7 @@ function ContactPage() {
   return (
     <ContactWrapper>
       <BackgroundWrapper>
-        <VideoBg2 autoPlay loop muted src={contactvid} type="video/mp4" />
+        <VideoBg2 autoPlay loop muted src={contactvid} type="image/gif" />
         <FormWrapper>
           <ContactTitle>I'd Love to Hear From You!</ContactTitle>
           <FormLabel>Your Email Address:</FormLabel>

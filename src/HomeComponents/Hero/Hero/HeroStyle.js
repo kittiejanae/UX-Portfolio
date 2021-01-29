@@ -13,7 +13,7 @@ export const HeroWrapper = styled.div`
   left: 0;
 `;
 
-export const HeroBg = styled.video`
+export const HeroBg = styled.img`
   margin: 0;
   padding: 0;
   width: 80vw;
