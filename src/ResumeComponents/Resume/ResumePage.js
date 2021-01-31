@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
+import Download from "@axetroy/react-download";
 import {
   BoxWrapper,
   VideoBox,
@@ -35,6 +36,7 @@ import resumevid4 from "../../videos/resumevid4.gif";
 import kenzie from "../../images/kenzie.png";
 import aia from "../../images/aia.png";
 import agnes from "../../images/agnes.svg";
+import myresume from "../../docs/njordanresume.pdf";
 
 const ResumePage = () => {
   const [isFlipped, setIsFlipped] = useState([false, false, false, false]);
@@ -46,7 +48,9 @@ const ResumePage = () => {
   };
   return (
     <ResumeWrapper>
-      <DownloadBtn>Download My Resume</DownloadBtn>
+      <Download file={myresume}>
+        <DownloadBtn>Download My Resume</DownloadBtn>
+      </Download>
       <ReactCardFlip
         isFlipped={isFlipped[0]}
         flipDirection="vertical"

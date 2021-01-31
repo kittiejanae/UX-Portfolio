@@ -75,7 +75,7 @@ export const FirstLastBoxWrapper = styled.div`
 `;
 
 export const LastBoxWrapper = styled.div`
-  width: 100%;
+  width: 80vw;
   height: 60vw;
   border-radius: 12px;
   margin-bottom: 20vw;

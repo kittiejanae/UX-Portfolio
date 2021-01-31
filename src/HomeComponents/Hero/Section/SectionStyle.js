@@ -9,6 +9,7 @@ export const SectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 4vw;
+  padding: 0;
 
   @media screen and (min-width: 786px) {
     flex-direction: row;
@@ -107,20 +108,20 @@ export const ProjectInfoBox = styled.ul`
   margin: 0;
 
   @media screen and (min-width: 786px) {
-    width: 140vw;
+    width: 80vw;
     height: 25vw;
   }
 `;
 
-export const SliderDiv = styled.li`
-  width: 100%;
+export const SliderDiv = styled.div`
+  width: 50vw;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 0;
-  margin-top: -2vw;
+  margin-top: 3.3vw;
   margin-left: 0;
   margin-right: 0;
 `;
@@ -131,11 +132,11 @@ export const WordContent = styled.div`
   align-items: flex-start;
   flex-direction: column;
   text-align: left;
-  width: 60%;
+  width: 50%;
   margin-bottom: 2vw;
   padding: 0;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 2vw;
 `;
 
 export const WordH2 = styled.h2`
@@ -153,11 +154,17 @@ export const WordP = styled.p`
   margin-bottom: 4vw;
   margin-left: 0;
   margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    transition: 0.8s all ease;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+  }
 `;
 
 export const ImageContent = styled.div`
-  width: 15%;
-  height: auto;
+  width: 30%;
+  height: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
