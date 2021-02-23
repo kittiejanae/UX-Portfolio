@@ -36,7 +36,7 @@ export const VideoBg2 = styled.img`
 
 export const FormWrapper = styled.form`
   width: 60vw;
-  height: 55%;
+  height: auto;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -58,14 +58,16 @@ export const ContactTitle = styled.h1`
 `;
 
 export const EmailInput = styled.input`
-  margin-left: 4vw;
-  margin-right: 4vw;
   margin-bottom: 2vw;
   width: 80%;
   height: 2vw;
   border-radius: 4px;
   background: #0d4215;
   color: white;
+
+  &:focus {
+    outline: none;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 2vw;
@@ -74,14 +76,15 @@ export const EmailInput = styled.input`
   }
 `;
 export const MessageInput = styled.textarea`
-  margin-left: 4vw;
-  margin-right: 4vw;
   margin-bottom: 2vw;
   width: 80%;
-  height: 50vw;
   border-radius: 4px;
   background: #0d4215;
   color: white;
+
+  &:focus {
+    outline: none;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 2vw;
@@ -130,8 +133,8 @@ export const FormLabel = styled.label`
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.1vw;
-  line-height: 2.3vw;
+  font-size: 2vw;
+  line-height: 2.1vw;
   margin-bottom: 2vw;
 
   @media screen and (min-width: 768px) {

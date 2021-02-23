@@ -65,7 +65,7 @@ export const MockUpImageWrapper = styled(Link)`
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  width: 100%;
+  width: 40%;
 `;
 
 export const MockupImage = styled.img`
@@ -94,7 +94,7 @@ export const MockUpDetails = styled.h2`
 `;
 
 export const ProjectInfoBox = styled.ul`
-  width: 80vw;
+  width: 60%;
   height: 45vw;
   background: rgba(13, 66, 21, 0.6);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -114,7 +114,7 @@ export const ProjectInfoBox = styled.ul`
 `;
 
 export const SliderDiv = styled.div`
-  width: 50vw;
+  width: 70vw;
   height: 100%;
   display: flex;
   justify-content: center;

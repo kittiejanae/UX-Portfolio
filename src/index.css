@@ -75,3 +75,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.success-msg {
+  color: black;
+}
+
+.err-msg {
+  color: red;
+}

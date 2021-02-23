@@ -14,7 +14,7 @@ export const ResumeWrapper = styled.div`
   }
 `;
 
-export const DownloadBtn = styled.button`
+export const DownloadBtn = styled.a`
   cursor: pointer;
   font-family: Helvetica;
   font-style: normal;
@@ -28,6 +28,7 @@ export const DownloadBtn = styled.button`
   padding: 1.5vw;
   border: none;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  text-decoration: none;
 
   &:focus {
     outline: none;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import Download from "@axetroy/react-download";
+// import Download from "@axetroy/react-download";
+// import { Document, Page } from "react-pdf";
 import {
   BoxWrapper,
   VideoBox,
@@ -36,7 +37,7 @@ import resumevid4 from "../../videos/resumevid4.gif";
 import kenzie from "../../images/kenzie.png";
 import aia from "../../images/aia.png";
 import agnes from "../../images/agnes.svg";
-import myresume from "../../docs/njordanresume.pdf";
+import MyResumeDoc from "../../docs/njordanresume.pdf";
 
 const ResumePage = () => {
   const [isFlipped, setIsFlipped] = useState([false, false, false, false]);
@@ -46,11 +47,26 @@ const ResumePage = () => {
       prevIsFlipped.map((flipped, i) => (i === flipIndex ? !flipped : flipped))
     );
   };
+
+  // const onDocumentLoadSuccess = ({ numPages }) => {
+  //   setNumPages(numPages);
+  // };
+
   return (
     <ResumeWrapper>
-      <Download file={myresume}>
-        <DownloadBtn>Download My Resume</DownloadBtn>
-      </Download>
+      <DownloadBtn download href={MyResumeDoc}>
+        Download My Resume
+      </DownloadBtn>
+
+      {/* <div>
+        <Document
+          file="njordanresume.pdf"
+          // onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page />
+        </Document>
+      </div> */}
+
       <ReactCardFlip
         isFlipped={isFlipped[0]}
         flipDirection="vertical"
