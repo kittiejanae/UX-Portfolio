@@ -95,7 +95,7 @@ class ContactPage extends React.Component {
             <MessageInput
               className="messageInput"
               type="text"
-              name="message"
+              name="messageInput"
               rows="5"
               value={this.state.message}
               onChange={this.handleChange}
