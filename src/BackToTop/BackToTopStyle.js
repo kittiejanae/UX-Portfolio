@@ -3,19 +3,24 @@ import styled from "styled-components";
 
 export const BackToTopWrapper = styled(Link)`
   width: 80vw;
-  height: 6vw;
+  height: 8vw;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  float: left;
+  flex-flow: column;
+  text-decoration: none;
+  margin-bottom: 4vw;
 `;
 
 export const BackToTopImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 6vw;
   padding: 0;
   cursor: pointer;
   margin-left: 80%;
-  margin-bottom: 4vw;
+  margin-bottom: 0;
 
   &:hover {
     transform: scale(1.07);
@@ -23,7 +28,17 @@ export const BackToTopImage = styled.img`
   }
 
   @media screen and (min-width: 786px) {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 8vw;
   }
+`;
+
+export const BackToTopP = styled.p`
+  text-decoration: none;
+  font-size: 1.5vw;
+  line-height: 1.7vw;
+  width: 100%;
+  text-align: right;
+  margin-right: 6vw;
+  margin-top: 0;
 `;

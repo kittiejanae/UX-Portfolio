@@ -18,7 +18,7 @@ const reviews = [
   {
     name: "Mia Peace",
     personPhoto: `${require("../../images/mia.jpg").default}`,
-    occupation: "UX/UI Tutor",
+    occupation: "UX/UI Facilitator",
     connection: "Teammate",
     quote:
       "Beyond most that I've had the pleasure of working with, Kittie's tenacity and attention to detail puts her among the most talented. Once she starts something, you can be sure that she will finish it with style.",

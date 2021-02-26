@@ -89,7 +89,7 @@ const ResumePage = () => {
               certificate in UX Design with more than 5 years experience in the
               entertainment industry in various forms. I am interested in
               wireframing, prototyping and working with a team to create
-              innovative products. I create designs to improve oversatflipIrated
+              innovative products. I create designs to improve oversaturated
               markets and overall user experience.
             </TextContent>
           </TextBox>

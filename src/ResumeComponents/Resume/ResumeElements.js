@@ -58,6 +58,10 @@ export const BoxWrapper = styled.div`
   border-radius: 12px;
   margin-bottom: 6vw;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media screen and (min-width: 786px) {
     height: 18vw;
     margin-bottom: 1vw;
@@ -70,6 +74,10 @@ export const FirstLastBoxWrapper = styled.div`
   border-radius: 12px;
   margin-bottom: 6vw;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   @media screen and (min-width: 786px) {
     height: 30vw;
   }
@@ -80,6 +88,10 @@ export const LastBoxWrapper = styled.div`
   height: 60vw;
   border-radius: 12px;
   margin-bottom: 20vw;
+
+  &:hover {
+    cursor: pointer;
+  }
 
   @media screen and (min-width: 786px) {
     height: 30vw;
@@ -93,9 +105,9 @@ export const VideoBox = styled.div`
   height: 100%;
   border-radius: 12px;
   background: rgba(13, 66, 21, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  // backdrop-filter: blur(4px);
+  // -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,9 +129,9 @@ export const VideoBg = styled.img`
   -o-object-fit: cover;
   object-fit: cover;
   background: rgba(13, 66, 21, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  // backdrop-filter: blur(4px);
+  // -webkit-backdrop-filter: blur(4px);
   border-radius: 12px;
 `;
 

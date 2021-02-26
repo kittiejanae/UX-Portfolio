@@ -42,6 +42,14 @@ function App() {
             return null;
           }}
         />
+        <Route
+          path="/Adulted"
+          component={() => {
+            window.location =
+              "https://github.com/KenzieAcademy-Students/ux-q4-react-todo-app-kittiejanae.git";
+            return null;
+          }}
+        />
       </Switch>
     </Router>
   );

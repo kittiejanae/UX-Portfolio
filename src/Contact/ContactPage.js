@@ -1,6 +1,7 @@
 // import { render } from "@testing-library/react";
 import React from "react";
 import contactvid from "../videos/contactvid.gif";
+import Axios from "axios";
 import {
   ContactWrapper,
   BackgroundWrapper,
@@ -54,6 +55,27 @@ class ContactPage extends React.Component {
     event.preventDefault();
 
     this.setState({ disabled: true });
+
+    Axios.post("/api/email", this.state)
+      .then((res) => {
+        if (res.data.success) {
+          this.setState({
+            disabled: false,
+            emailSent: true,
+          });
+        } else {
+          this.setState({
+            disabled: false,
+            emailSent: false,
+          });
+        }
+      })
+      .catch((err) => {
+        this.setState({
+          disabled: false,
+          emailSent: false,
+        });
+      });
   };
 
   render() {

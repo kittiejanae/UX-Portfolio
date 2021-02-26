@@ -65,7 +65,7 @@ export const MockUpImageWrapper = styled(Link)`
   align-items: center;
   flex-direction: column;
   text-decoration: none;
-  width: 40%;
+  width: 100%;
 `;
 
 export const MockupImage = styled.img`
@@ -94,12 +94,12 @@ export const MockUpDetails = styled.h2`
 `;
 
 export const ProjectInfoBox = styled.ul`
-  width: 60%;
-  height: 45vw;
+  width: 80vw;
+  height: 50vw;
   background: rgba(13, 66, 21, 0.6);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  // box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  // backdrop-filter: blur(4px);
+  // -webkit-backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,35 +108,67 @@ export const ProjectInfoBox = styled.ul`
   margin: 0;
 
   @media screen and (min-width: 786px) {
-    width: 80vw;
-    height: 25vw;
+    width: 60vw;
+    height: 30vw;
   }
 `;
 
 export const SliderDiv = styled.div`
-  width: 70vw;
-  height: 100%;
+  width: 100%;
+  height: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 0;
-  margin-top: 3.3vw;
+  margin-top: 4vw;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 6vw;
+
+  @media screen and (min-width: 786px) {
+    width: 80%;
+    height: 28vw;
+    margin-top: 0;
+    margin-bottom: 2vw;
+    margin-right: 2vw;
+  }
 `;
 
 export const WordContent = styled.div`
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   text-align: left;
-  width: 50%;
-  margin-bottom: 2vw;
+  width: 45%;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   margin-left: 0;
   margin-right: 2vw;
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
+`;
+
+export const WordContent2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+  width: 45%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 2vw;
+  margin-right: 0;
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+  }
 `;
 
 export const WordH2 = styled.h2`
@@ -146,14 +178,44 @@ export const WordH2 = styled.h2`
   padding: 0;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
+  width: 100%;
 `;
 
 export const WordP = styled.p`
   text-align: left;
   color: white;
-  margin-bottom: 4vw;
+  margin-bottom: 3vw;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 1vw;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    transition: 0.8s all ease;
+    font-size: 1.5vw;
+    line-height: 1.7vw;
+  }
+`;
+export const WordH2Alt = styled.h2`
+  text-align: right;
+  color: white;
+  margin-bottom: 0;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 100%;
+`;
+
+export const WordPAlt = styled.p`
+  text-align: right;
+  color: white;
+  margin-bottom: 3vw;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1vw;
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     transition: 0.8s all ease;
@@ -163,8 +225,8 @@ export const WordP = styled.p`
 `;
 
 export const ImageContent = styled.div`
-  width: 30%;
-  height: 20vw;
+  width: 25%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +242,7 @@ export const SectionImage = styled.img`
 export const WireFrameBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center
   align-items: center;
   margin-top: 2vw;
   width: 100%;
