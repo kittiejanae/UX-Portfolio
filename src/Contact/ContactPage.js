@@ -54,28 +54,28 @@ class ContactPage extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
 
-    this.setState({ disabled: true });
+    // this.setState({ disabled: true });
 
-    Axios.post("http://localhost:3030/api/email", this.state)
-      .then((res) => {
-        if (res.data.success) {
-          this.setState({
-            disabled: false,
-            emailSent: true,
-          });
-        } else {
-          this.setState({
-            disabled: false,
-            emailSent: false,
-          });
-        }
-      })
-      .catch((err) => {
-        this.setState({
-          disabled: false,
-          emailSent: false,
-        });
-      });
+    // Axios.post("http://localhost:3030/api/email", this.state)
+    //   .then((res) => {
+    //     if (res.data.success) {
+    //       this.setState({
+    //         disabled: false,
+    //         emailSent: true,
+    //       });
+    //     } else {
+    //       this.setState({
+    //         disabled: false,
+    //         emailSent: false,
+    //       });
+    //     }
+    //   })
+    //   .catch((err) => {
+    //     this.setState({
+    //       disabled: false,
+    //       emailSent: false,
+    //     });
+    //   });
   };
 
   render() {
@@ -83,7 +83,13 @@ class ContactPage extends React.Component {
       <ContactWrapper>
         <BackgroundWrapper>
           <VideoBg2 autoPlay loop muted src={contactvid} type="image/gif" />
-          <FormWrapper onSubmit={this.handleSubmit}>
+          <FormWrapper
+            onSubmit={this.handleSubmit}
+            name="contact"
+            action="/contact"
+            method="post"
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <ContactTitle>I'd Love to Hear From You!</ContactTitle>
 
             <FormLabel>Full Name:</FormLabel>
@@ -91,6 +97,7 @@ class ContactPage extends React.Component {
               className="nameInput"
               type="text"
               name="name"
+              placeholder="Your Name"
               value={this.state.name}
               onChange={this.handleChange}
               required
@@ -99,8 +106,9 @@ class ContactPage extends React.Component {
             <FormLabel>Email Address:</FormLabel>
             <EmailInput
               className="emailInput"
-              type="text"
+              type="email"
               name="email"
+              placeholder="Your Email"
               value={this.state.email}
               onChange={this.handleChange}
               required
