@@ -122,7 +122,7 @@ export const SliderDiv = styled.div`
   flex-direction: row;
   padding: 0;
   margin-top: 4vw;
-  margin-left: 4vw;
+  margin-left: 2vw;
   margin-right: 2vw;
   margin-bottom: 6vw;
 
@@ -131,6 +131,7 @@ export const SliderDiv = styled.div`
     height: 28vw;
     margin-top: 0;
     margin-bottom: 2vw;
+    margin-left: 4vw;
     margin-right: 2vw;
   }
 `;
