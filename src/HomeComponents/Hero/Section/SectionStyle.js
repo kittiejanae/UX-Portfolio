@@ -123,7 +123,7 @@ export const SliderDiv = styled.div`
   padding: 0;
   margin-top: 4vw;
   margin-left: 4vw;
-  margin-right: 0;
+  margin-right: 2vw;
   margin-bottom: 6vw;
 
   @media screen and (min-width: 786px) {
