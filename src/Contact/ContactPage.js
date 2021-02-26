@@ -1,7 +1,7 @@
 // import { render } from "@testing-library/react";
 import React from "react";
 import contactvid from "../videos/contactvid.gif";
-import Axios from "axios";
+// import Axios from "axios";
 import {
   ContactWrapper,
   BackgroundWrapper,
@@ -26,7 +26,7 @@ class ContactPage extends React.Component {
     };
   }
 
-  //  resetForm() {
+  // resetForm() {
   //   let email = document.querySelector(".emailInput");
   //   let message = document.querySelector(".messageInput");
 
@@ -34,14 +34,18 @@ class ContactPage extends React.Component {
   //   message.value = "";
   // }
 
-  // onSubmit(event) {
-  //   event.preventDefault();
+  onSubmit(event) {
+    event.preventDefault();
 
-  //   let outputStr = `Thanks for reaching out! I'll be in touch with you soon.`;
-  //   alert(outputStr);
+    let outputStr = `Thanks for reaching out! I'll be in touch with you soon.`;
+    alert(outputStr);
 
-  //   resetForm();
-  // }
+    let email = document.querySelector(".emailInput");
+    let message = document.querySelector(".messageInput");
+
+    email.value = "";
+    message.value = "";
+  }
 
   handleChange = (event) => {
     const target = event.target;
@@ -49,33 +53,6 @@ class ContactPage extends React.Component {
     const name = target.name;
 
     this.setState({ [name]: value });
-  };
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-
-    // this.setState({ disabled: true });
-
-    // Axios.post("http://localhost:3030/api/email", this.state)
-    //   .then((res) => {
-    //     if (res.data.success) {
-    //       this.setState({
-    //         disabled: false,
-    //         emailSent: true,
-    //       });
-    //     } else {
-    //       this.setState({
-    //         disabled: false,
-    //         emailSent: false,
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     this.setState({
-    //       disabled: false,
-    //       emailSent: false,
-    //     });
-    //   });
   };
 
   render() {
@@ -125,7 +102,7 @@ class ContactPage extends React.Component {
               required
             />
 
-            <SubmitButton type="submit" disabled={this.state.disabled}>
+            <SubmitButton type="submit" onSubmit={this.onSubmit}>
               Send
             </SubmitButton>
 
