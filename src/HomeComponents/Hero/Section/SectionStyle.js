@@ -122,7 +122,7 @@ export const SliderDiv = styled.div`
   flex-direction: row;
   padding: 0;
   margin-top: 4vw;
-  margin-left: 0;
+  margin-left: 4vw;
   margin-right: 0;
   margin-bottom: 6vw;
 
