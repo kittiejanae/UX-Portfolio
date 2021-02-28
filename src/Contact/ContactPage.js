@@ -61,7 +61,7 @@ class ContactPage extends React.Component {
         <BackgroundWrapper>
           <VideoBg2 autoPlay loop muted src={contactvid} type="image/gif" />
           <FormWrapper
-            onSubmit={this.handleSubmit}
+            onSubmit={this.onSubmit}
             name="contact"
             method="POST"
             action="/Contact"
