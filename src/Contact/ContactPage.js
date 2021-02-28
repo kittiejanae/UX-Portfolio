@@ -42,9 +42,11 @@ class ContactPage extends React.Component {
 
     let email = document.querySelector(".emailInput");
     let message = document.querySelector(".messageInput");
+    let name = document.querySelector(".nameInput");
 
     email.value = "";
     message.value = "";
+    name.value = "";
   }
 
   handleChange = (event) => {
