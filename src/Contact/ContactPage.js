@@ -63,8 +63,9 @@ class ContactPage extends React.Component {
           <FormWrapper
             onSubmit={this.handleSubmit}
             name="contact"
-            action="/contact"
-            method="post"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
             <ContactTitle>I'd Love to Hear From You!</ContactTitle>
@@ -95,14 +96,14 @@ class ContactPage extends React.Component {
             <MessageInput
               className="messageInput"
               type="text"
-              name="messageInput"
+              name="message"
               rows="5"
               value={this.state.message}
               onChange={this.handleChange}
               required
             />
 
-            <SubmitButton type="submit" onSubmit={this.onSubmit}>
+            <SubmitButton name="submit" type="submit" onSubmit={this.onSubmit}>
               Send
             </SubmitButton>
 
