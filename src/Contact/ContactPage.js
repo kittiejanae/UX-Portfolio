@@ -34,7 +34,7 @@ class ContactPage extends React.Component {
   //   message.value = "";
   // }
 
-  onSubmit(event) {
+  handleSubmit(event) {
     event.preventDefault();
 
     let outputStr = `Thanks for reaching out! I'll be in touch with you soon.`;
@@ -63,7 +63,7 @@ class ContactPage extends React.Component {
         <BackgroundWrapper>
           <VideoBg2 autoPlay loop muted src={contactvid} type="image/gif" />
           <FormWrapper
-            onSubmit={this.onSubmit}
+            onSubmit={this.handleSubmit}
             name="contact"
             method="POST"
             action="/Contact"
@@ -106,7 +106,11 @@ class ContactPage extends React.Component {
               required
             />
 
-            <SubmitButton name="submit" type="submit" onSubmit={this.onSubmit}>
+            <SubmitButton
+              name="submit"
+              type="submit"
+              onSubmit={this.handleSubmit}
+            >
               Send
             </SubmitButton>
 
