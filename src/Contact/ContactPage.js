@@ -65,7 +65,7 @@ class ContactPage extends React.Component {
           <FormWrapper
             onSubmit={this.handleSubmit}
             name="contact"
-            method="POST"
+            method="post"
             // action="/Contact"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
