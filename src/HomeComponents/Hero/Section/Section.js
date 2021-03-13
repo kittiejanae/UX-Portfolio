@@ -10,14 +10,6 @@ import {
   MockupImage,
   MockUpDetails,
   MockUpImageWrapper,
-  WordContent,
-  WordContent2,
-  WordH2,
-  WordP,
-  WordH2Alt,
-  WordPAlt,
-  ImageContent,
-  SliderDiv,
 } from "./SectionStyle";
 import heirloomMockup from "../../../images/heirloomMockup.png";
 import thlogo from "../../../images/thlogo.png";
@@ -32,6 +24,14 @@ import "swiper/components/pagination/pagination.scss";
 import ImageGallery from "react-image-gallery";
 
 const ProjectInfoBox = lazy(() => import("./SectionStyle"));
+const WordContent = lazy(() => import("./SectionStyle"));
+const WordContent2 = lazy(() => import("./SectionStyle"));
+const WordH2 = lazy(() => import("./SectionStyle"));
+const WordP = lazy(() => import("./SectionStyle"));
+const WordH2Alt = lazy(() => import("./SectionStyle"));
+const WordPAlt = lazy(() => import("./SectionStyle"));
+const ImageContent = lazy(() => import("./SectionStyle"));
+const SliderDiv = lazy(() => import("./SectionStyle"));
 
 const Section = () => {
   // const researchImages = [
