@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Header />
       <Hero />
-      <Suspense fallback={<div>loading...</div>}>
+      <Suspense fallback={<p>loading...</p>}>
         <Section />
       </Suspense>
       <Footer />

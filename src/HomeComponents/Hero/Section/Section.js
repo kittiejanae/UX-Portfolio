@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "react-responsive-carousel/lib/styles/carousel.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -10,7 +10,6 @@ import {
   MockupImage,
   MockUpDetails,
   MockUpImageWrapper,
-  ProjectInfoBox,
   WordContent,
   WordContent2,
   WordH2,
@@ -31,6 +30,8 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 // import Slider from "react-slick";
 import ImageGallery from "react-image-gallery";
+
+const ProjectInfoBox = lazy(() => import("./SectionStyle"));
 
 const Section = () => {
   // const researchImages = [
@@ -410,39 +411,41 @@ const Section = () => {
           <MockUpDetails>UX/UIE Case Study: Heirloom</MockUpDetails>
         </MockUpImageWrapper>
 
-        <ProjectInfoBox>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            {projectSlides.map((projectSlide, index) => (
-              <SwiperSlide>
-                <SliderDiv>
-                  <WordContent>
-                    <WordH2>{projectSlide.title}</WordH2>
-                    <WordP>{projectSlide.textContent}</WordP>
-                  </WordContent>
-                  <ImageContent>
-                    <ImageGallery
-                      items={projectSlide.slideGallery}
-                      autoPlay={true}
-                      showThumbnails={false}
-                      showNav={false}
-                      showPlayButton={false}
-                      showFullscreenButton={false}
-                      disableSwipe={true}
-                      slideInterval={3500}
-                    />
-                  </ImageContent>
-                </SliderDiv>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </ProjectInfoBox>
+        <Suspense>
+          <ProjectInfoBox>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              {projectSlides.map((projectSlide, index) => (
+                <SwiperSlide>
+                  <SliderDiv>
+                    <WordContent>
+                      <WordH2>{projectSlide.title}</WordH2>
+                      <WordP>{projectSlide.textContent}</WordP>
+                    </WordContent>
+                    <ImageContent>
+                      <ImageGallery
+                        items={projectSlide.slideGallery}
+                        autoPlay={true}
+                        showThumbnails={false}
+                        showNav={false}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        disableSwipe={true}
+                        slideInterval={3500}
+                      />
+                    </ImageContent>
+                  </SliderDiv>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ProjectInfoBox>
+        </Suspense>
       </SectionWrapper>
       <SectionWrapper2>
         <MockUpImageWrapper to="/TacticalHealthcare" target="_blank">
@@ -450,40 +453,42 @@ const Section = () => {
           <MockUpDetails>UX/UI Case Study: Tactical Healthcare</MockUpDetails>
         </MockUpImageWrapper>
 
-        <ProjectInfoBox>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            {projectSlides2.map((projectSlide, index) => (
-              <SwiperSlide>
-                <SliderDiv>
-                  <ImageContent>
-                    <ImageGallery
-                      items={projectSlide.slideGallery}
-                      autoPlay={true}
-                      showThumbnails={false}
-                      showNav={false}
-                      showPlayButton={false}
-                      showFullscreenButton={false}
-                      disableSwipe={true}
-                      slideInterval={3500}
-                    />
-                  </ImageContent>
+        <Suspense>
+          <ProjectInfoBox>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              {projectSlides2.map((projectSlide, index) => (
+                <SwiperSlide>
+                  <SliderDiv>
+                    <ImageContent>
+                      <ImageGallery
+                        items={projectSlide.slideGallery}
+                        autoPlay={true}
+                        showThumbnails={false}
+                        showNav={false}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        disableSwipe={true}
+                        slideInterval={3500}
+                      />
+                    </ImageContent>
 
-                  <WordContent2>
-                    <WordH2Alt>{projectSlide.title}</WordH2Alt>
-                    <WordPAlt>{projectSlide.textContent}</WordPAlt>
-                  </WordContent2>
-                </SliderDiv>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </ProjectInfoBox>
+                    <WordContent2>
+                      <WordH2Alt>{projectSlide.title}</WordH2Alt>
+                      <WordPAlt>{projectSlide.textContent}</WordPAlt>
+                    </WordContent2>
+                  </SliderDiv>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ProjectInfoBox>
+        </Suspense>
       </SectionWrapper2>
       <SectionWrapper3>
         <MockUpImageWrapper to="/AllTones" target="_blank">
@@ -491,39 +496,41 @@ const Section = () => {
           <MockUpDetails>UX/UI Case Study: All Tones</MockUpDetails>
         </MockUpImageWrapper>
 
-        <ProjectInfoBox>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            {projectSlides3.map((projectSlide, index) => (
-              <SwiperSlide>
-                <SliderDiv>
-                  <WordContent>
-                    <WordH2>{projectSlide.title}</WordH2>
-                    <WordP>{projectSlide.textContent}</WordP>
-                  </WordContent>
-                  <ImageContent>
-                    <ImageGallery
-                      items={projectSlide.slideGallery}
-                      autoPlay={true}
-                      showThumbnails={false}
-                      showNav={false}
-                      showPlayButton={false}
-                      showFullscreenButton={false}
-                      disableSwipe={true}
-                      slideInterval={3500}
-                    />
-                  </ImageContent>
-                </SliderDiv>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </ProjectInfoBox>
+        <Suspense>
+          <ProjectInfoBox>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              {projectSlides3.map((projectSlide, index) => (
+                <SwiperSlide>
+                  <SliderDiv>
+                    <WordContent>
+                      <WordH2>{projectSlide.title}</WordH2>
+                      <WordP>{projectSlide.textContent}</WordP>
+                    </WordContent>
+                    <ImageContent>
+                      <ImageGallery
+                        items={projectSlide.slideGallery}
+                        autoPlay={true}
+                        showThumbnails={false}
+                        showNav={false}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        disableSwipe={true}
+                        slideInterval={3500}
+                      />
+                    </ImageContent>
+                  </SliderDiv>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ProjectInfoBox>
+        </Suspense>
       </SectionWrapper3>
       <SectionWrapper4>
         <MockUpImageWrapper to="/Adulted" target="_blank">
@@ -531,40 +538,42 @@ const Section = () => {
           <MockUpDetails>UIE Project: Adulted</MockUpDetails>
         </MockUpImageWrapper>
 
-        <ProjectInfoBox>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            onSlideChange={() => console.log("slide change")}
-            onSwiper={(swiper) => console.log(swiper)}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            {projectSlides4.map((projectSlide, index) => (
-              <SwiperSlide>
-                <SliderDiv>
-                  <ImageContent>
-                    <ImageGallery
-                      items={projectSlide.slideGallery}
-                      autoPlay={true}
-                      showThumbnails={false}
-                      showNav={false}
-                      showPlayButton={false}
-                      showFullscreenButton={false}
-                      disableSwipe={true}
-                      slideInterval={3500}
-                    />
-                  </ImageContent>
+        <Suspense>
+          <ProjectInfoBox>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              {projectSlides4.map((projectSlide, index) => (
+                <SwiperSlide>
+                  <SliderDiv>
+                    <ImageContent>
+                      <ImageGallery
+                        items={projectSlide.slideGallery}
+                        autoPlay={true}
+                        showThumbnails={false}
+                        showNav={false}
+                        showPlayButton={false}
+                        showFullscreenButton={false}
+                        disableSwipe={true}
+                        slideInterval={3500}
+                      />
+                    </ImageContent>
 
-                  <WordContent2>
-                    <WordH2Alt>{projectSlide.title}</WordH2Alt>
-                    <WordPAlt>{projectSlide.textContent}</WordPAlt>
-                  </WordContent2>
-                </SliderDiv>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </ProjectInfoBox>
+                    <WordContent2>
+                      <WordH2Alt>{projectSlide.title}</WordH2Alt>
+                      <WordPAlt>{projectSlide.textContent}</WordPAlt>
+                    </WordContent2>
+                  </SliderDiv>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ProjectInfoBox>
+        </Suspense>
       </SectionWrapper4>
     </>
   );
