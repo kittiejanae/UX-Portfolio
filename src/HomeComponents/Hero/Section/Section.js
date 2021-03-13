@@ -10,20 +10,36 @@ import {
   MockupImage,
   MockUpDetails,
   MockUpImageWrapper,
+  ProjectInfoBox,
 } from "./SectionStyle";
 import heirloomMockup from "../../../images/heirloomMockup.png";
 import thlogo from "../../../images/thlogo.png";
 import alltoneslogo from "../../../images/alltoneslogo.png";
 import adultedlogo from "../../../images/adultedlogo.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, A11y } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import SwiperCore, { Navigation, Pagination, A11y } from "swiper";
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 // import Slider from "react-slick";
 import ImageGallery from "react-image-gallery";
 
-const ProjectInfoBox = lazy(() => import("./SectionStyle"));
+const Swiper = lazy(() =>
+  import("swiper/react").then((mod) => ({ default: mod.Swiper.div }))
+);
+const SwiperSlide = lazy(() =>
+  import("swiper/react").then((mod) => ({ default: mod.SwiperSlide.div }))
+);
+const Navigation = lazy(() =>
+  import("swiper").then((mod) => ({ default: mod.Naviation.div }))
+);
+const Pagination = lazy(() =>
+  import("swiper").then((mod) => ({ default: mod.Pagination.div }))
+);
+const A11y = lazy(() =>
+  import("swiper").then((mod) => ({ default: mod.A11y.div }))
+);
+const SwiperCore = lazy(() => import("swiper"));
 const WordContent = lazy(() => import("./SectionStyle"));
 const WordContent2 = lazy(() => import("./SectionStyle"));
 const WordH2 = lazy(() => import("./SectionStyle"));
@@ -411,8 +427,8 @@ const Section = () => {
           <MockUpDetails>UX/UIE Case Study: Heirloom</MockUpDetails>
         </MockUpImageWrapper>
 
-        <Suspense>
-          <ProjectInfoBox>
+        <ProjectInfoBox>
+          <Suspense>
             <Swiper
               spaceBetween={0}
               slidesPerView={1}
@@ -444,8 +460,8 @@ const Section = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </ProjectInfoBox>
-        </Suspense>
+          </Suspense>
+        </ProjectInfoBox>
       </SectionWrapper>
       <SectionWrapper2>
         <MockUpImageWrapper to="/TacticalHealthcare" target="_blank">
@@ -453,8 +469,8 @@ const Section = () => {
           <MockUpDetails>UX/UI Case Study: Tactical Healthcare</MockUpDetails>
         </MockUpImageWrapper>
 
-        <Suspense>
-          <ProjectInfoBox>
+        <ProjectInfoBox>
+          <Suspense>
             <Swiper
               spaceBetween={0}
               slidesPerView={1}
@@ -487,8 +503,8 @@ const Section = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </ProjectInfoBox>
-        </Suspense>
+          </Suspense>
+        </ProjectInfoBox>
       </SectionWrapper2>
       <SectionWrapper3>
         <MockUpImageWrapper to="/AllTones" target="_blank">
@@ -496,8 +512,8 @@ const Section = () => {
           <MockUpDetails>UX/UI Case Study: All Tones</MockUpDetails>
         </MockUpImageWrapper>
 
-        <Suspense>
-          <ProjectInfoBox>
+        <ProjectInfoBox>
+          <Suspense>
             <Swiper
               spaceBetween={0}
               slidesPerView={1}
@@ -529,8 +545,8 @@ const Section = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </ProjectInfoBox>
-        </Suspense>
+          </Suspense>
+        </ProjectInfoBox>
       </SectionWrapper3>
       <SectionWrapper4>
         <MockUpImageWrapper to="/Adulted" target="_blank">
@@ -538,8 +554,8 @@ const Section = () => {
           <MockUpDetails>UIE Project: Adulted</MockUpDetails>
         </MockUpImageWrapper>
 
-        <Suspense>
-          <ProjectInfoBox>
+        <ProjectInfoBox>
+          <Suspense>
             <Swiper
               spaceBetween={0}
               slidesPerView={1}
@@ -572,8 +588,8 @@ const Section = () => {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </ProjectInfoBox>
-        </Suspense>
+          </Suspense>
+        </ProjectInfoBox>
       </SectionWrapper4>
     </>
   );
