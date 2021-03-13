@@ -8,13 +8,15 @@ const Section = lazy(() => import("../HomeComponents/Hero/Section/Section"));
 
 const Home = () => {
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <div>
       <Header />
       <Hero />
-      <Section />
+      <Suspense fallback={<div>loading...</div>}>
+        <Section />
+      </Suspense>
       <Footer />
       <BackToTop />
-    </Suspense>
+    </div>
   );
 };
 
