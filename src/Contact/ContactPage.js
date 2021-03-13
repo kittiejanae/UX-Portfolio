@@ -131,4 +131,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage;
+export default React.memo(ContactPage);

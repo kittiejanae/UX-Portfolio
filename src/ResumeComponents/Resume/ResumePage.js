@@ -340,4 +340,4 @@ const ResumePage = () => {
   );
 };
 
-export default ResumePage;
+export default React.memo(ResumePage);
