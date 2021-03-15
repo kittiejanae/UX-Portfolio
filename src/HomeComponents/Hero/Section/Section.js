@@ -369,7 +369,7 @@ const Section = () => {
     {
       title: "Project Overview",
       textContent:
-        "A project to design a simple task managager. I decided to create Adulted.",
+        "A project to design a simple task manager. I decided to create Adulted.",
       slideGallery: [
         { original: require("../../../images/adulted1.svg").default },
       ],
