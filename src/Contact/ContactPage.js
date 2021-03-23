@@ -81,9 +81,9 @@ class ContactPage extends React.Component {
             name="contact"
             // method="post"
             // action="/Contact"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            hidden
+            // data-netlify="true"
+            // data-netlify-honeypot="bot-field"
+            // hidden
           >
             <input type="hidden" name="form-name" value="contact" />
             <ContactTitle>I'd Love to Hear From You!</ContactTitle>
