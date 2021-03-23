@@ -81,7 +81,7 @@ class ContactPage extends React.Component {
             name="contact"
             // method="post"
             // action="/Contact"
-            // data-netlify="true"
+            data-netlify="true"
             // data-netlify-honeypot="bot-field"
             // hidden
           >
