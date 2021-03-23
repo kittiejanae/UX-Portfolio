@@ -14,6 +14,12 @@ import {
   FormLabel,
 } from "./ContactStyle";
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 class ContactPage extends React.Component {
   constructor(props) {
     super(props);
@@ -35,6 +41,14 @@ class ContactPage extends React.Component {
   // }
 
   handleSubmit(event) {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
     event.preventDefault();
 
     let outputStr = `Thanks for reaching out! I'll be in touch with you soon.`;
@@ -65,10 +79,11 @@ class ContactPage extends React.Component {
           <FormWrapper
             onSubmit={this.handleSubmit}
             name="contact"
-            method="post"
-            action="/Contact"
+            // method="post"
+            // action="/Contact"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
+            hidden
           >
             <input type="hidden" name="form-name" value="contact" />
             <ContactTitle>I'd Love to Hear From You!</ContactTitle>
