@@ -8,12 +8,7 @@ body {
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 
-  background: linear-gradient(
-    151.91deg,
-    rgba(13, 66, 21, 0.5) -32.99%,
-    rgba(196, 222, 200, 0.5) 8.18%,
-    #ffffff 97.84%
-  );
+  background: white;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
