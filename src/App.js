@@ -50,6 +50,21 @@ function App() {
             return null;
           }}
         />
+        <Route
+          path="/DanceSavannah"
+          component={() => {
+            window.location = "https://priceless-clarke-626d27.netlify.app/";
+            return null;
+          }}
+        />
+        <Route
+          path="/LocalJams"
+          component={() => {
+            window.location =
+              "https://www.figma.com/proto/SyzGUxSljasNMWDe5xNJLg/Local-Jams?node-id=228%3A445&viewport=1512%2C-1396%2C0.38580018281936646&scaling=scale-down&page-id=0%3A1";
+            return null;
+          }}
+        />
       </Switch>
     </Router>
   );

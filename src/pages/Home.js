@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import BackToTop from "../BackToTop/BackToTop";
 import Header from "../Header/Header";
+import Extra from "../HomeComponents/Extra";
 import Footer from "../HomeComponents/Footer/Footer";
 import Hero from "../HomeComponents/Hero/Hero/Hero";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Suspense fallback={<p>loading...</p>}>
         <Section />
       </Suspense>
+      <Extra />
       <Footer />
       <BackToTop />
     </div>
