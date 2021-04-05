@@ -61,7 +61,7 @@ function App() {
           path="/LocalJams"
           component={() => {
             window.location =
-              "https://www.figma.com/proto/SyzGUxSljasNMWDe5xNJLg/Local-Jams?node-id=228%3A445&viewport=1512%2C-1396%2C0.38580018281936646&scaling=scale-down&page-id=0%3A1";
+              "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSyzGUxSljasNMWDe5xNJLg%2FLocal-Jams%3Fnode-id%3D228%253A345%26viewport%3D1512%252C-1396%252C0.38580018281936646%26scaling%3Dscale-down%26page-id%3D0%253A1";
             return null;
           }}
         />
