@@ -46,6 +46,30 @@ h2 {
   color: #0d4215;
 }
 
+h3 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5vw;
+  line-height: 1.7vw;
+  letter-spacing: -0.055em;
+  text-transform: lowercase;
+
+  color: #0d4215;
+}
+
+h4 {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2vw;
+  line-height: 2.2vw;
+  letter-spacing: -0.055em;
+  text-transform: lowercase;
+
+  color: #0d4215;
+}
+
 p {
   font-family: Helvetica;
   font-style: normal;

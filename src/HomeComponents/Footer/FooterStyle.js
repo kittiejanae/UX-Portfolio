@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
-  width: 80vw;
+  width: 100%;
   height: 40vw;
   display: flex;
   flex-direction: column;
@@ -11,10 +11,11 @@ export const FooterWrapper = styled.div`
   padding: 0;
 `;
 
-export const FooterH1 = styled.h1`
+export const FooterH1 = styled.h2`
   width: 100%;
   height: 10vw;
   margin: 0;
+  margin-left: 16vw;
   padding: 0;
 
   @media screen and (min-width: 786px) {
@@ -25,7 +26,7 @@ export const FooterH1 = styled.h1`
 
 export const ReviewsList = styled.ul`
   max-height: 15vw;
-  width: 100%;
+  width: 80vw;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -97,6 +98,7 @@ export const PersonTitle = styled.h2`
 export const PersonReview = styled.p`
   text-align: left;
   width: 100%;
+  color: black;
 
   @media screen and (min-width: 768px) {
     font-size: 1.5vw;

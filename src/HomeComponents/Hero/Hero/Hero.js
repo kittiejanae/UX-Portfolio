@@ -15,14 +15,41 @@ import {
   HeroBg,
   HeroAboutWrapper,
 } from "./HeroStyle";
+// import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   return (
-    <HeroWrapper>
+    <HeroWrapper
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-duration="1000"
+      data-aos-delay="600"
+      data-aos-offset="0"
+    >
       <HeroBg autoPlay loop muted src={herovid} type="image/gif" />
-      <HeroAboutWrapper>
-        <HeroImage src={AboutPhoto} type="image/png" />
-        <AboutWrapper>
+      <HeroAboutWrapper
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="1000"
+        data-aos-delay="700"
+        data-aos-offset="0"
+      >
+        <HeroImage
+          src={AboutPhoto}
+          type="image/png"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="800"
+          data-aos-offset="0"
+        />
+        <AboutWrapper
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="880"
+          data-aos-offset="0"
+        >
           <AboutMe>
             Welcome to my portfolio! I’m a UX Designer with a background in
             Entertainment & Media.

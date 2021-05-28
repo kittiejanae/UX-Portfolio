@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { HeaderWrapper, HeaderTitle, Line } from "./HeaderStyle";
+import {
+  HeaderWrapper,
+  HeaderBox,
+  HeaderTitle,
+  Line,
+  MenuBars,
+  NavMenu,
+  NavMenuLinks,
+} from "./HeaderStyle";
 import { animateScroll as scroll } from "react-scroll";
+import "aos/dist/aos.css";
+import { menuData } from "../data/MenuData";
 
-const Header = () => {
+const Header = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -23,10 +33,30 @@ const Header = () => {
 
   return (
     <HeaderWrapper scrollNav={scrollNav}>
-      <HeaderTitle to="/" onClick={toggleHome}>
-        natassja jordan • ux designer
-      </HeaderTitle>
-      <Line />
+      <HeaderBox>
+        <HeaderTitle to="/" onClick={toggleHome}>
+          natassja jordan • ux designer
+        </HeaderTitle>
+        <MenuBars
+          onClick={toggle}
+          data-aos="zoom-out"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="500"
+        />
+
+        <NavMenu
+          data-aos="zoom-out"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="500"
+        >
+          {menuData.map((item, index) => (
+            <NavMenuLinks to={item.link} key={index}>
+              {item.title}
+            </NavMenuLinks>
+          ))}
+        </NavMenu>
+      </HeaderBox>
+      {/* <Line /> */}
     </HeaderWrapper>
   );
 };

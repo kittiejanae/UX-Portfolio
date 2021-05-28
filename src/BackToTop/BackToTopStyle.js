@@ -19,7 +19,7 @@ export const BackToTopImage = styled.img`
   height: 6vw;
   padding: 0;
   cursor: pointer;
-  margin-left: 80%;
+  margin-left: 100%;
   margin-bottom: 0;
 
   &:hover {
@@ -39,6 +39,6 @@ export const BackToTopP = styled.p`
   line-height: 1.7vw;
   width: 100%;
   text-align: right;
-  margin-right: 6vw;
+  margin-right: -8vw;
   margin-top: 0;
 `;

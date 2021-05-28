@@ -51,7 +51,12 @@ const reviews = [
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-once="true"
+      data-aos-anchor-placement="center-bottom"
+    >
       <FooterH1>My Friends Call Me "Kittie"...</FooterH1>
       <ReviewsList>
         <Slider autoplay={100} duration={10000} previousButton="" nextButton="">
