@@ -17,68 +17,85 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: initial;
-  bottom: 0;
-  top: 0;
 }
 
 h1 {
   font-family: Tahoma;
   font-style: normal;
   font-weight: normal;
-  font-size: 3.6vw;
-  line-height: 3.8vw;
+  font-size: 24px;
+  line-height: 29px;
   letter-spacing: -0.055em;
   text-transform: lowercase;
-
   color: #0d4215;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 h2 {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.7vw;
-  line-height: 2.9vw;
+  font-size: 26px;
+  line-height: 32px;
   letter-spacing: -0.055em;
   text-transform: lowercase;
-
   color: #0d4215;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 h3 {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5vw;
-  line-height: 1.7vw;
+  font-size: 20px;
+  line-height: 26px;
   letter-spacing: -0.055em;
   text-transform: lowercase;
-
   color: #0d4215;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 
 h4 {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 2vw;
-  line-height: 2.2vw;
+  font-size: 18px;
+  line-height: 24px;
   letter-spacing: -0.055em;
   text-transform: lowercase;
-
   color: #0d4215;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 p {
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
-  font-size: 2.1vw;
-  line-height: 2.3vw;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
-
   color: #0d4215;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 li {

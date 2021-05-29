@@ -27,6 +27,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 2vw;
 `;
 
 export const HeaderBox = styled.nav`
@@ -90,7 +91,7 @@ export const MenuBars = styled.div`
     background-size: contain;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 25px;
     right: 4vw;
     transform: translate(-50%, 25%);
   }

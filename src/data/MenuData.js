@@ -1,11 +1,11 @@
 export const menuData = [
   {
     title: "About",
-    link: "/about",
+    link: "/About",
   },
   {
     title: "Resume",
-    link: "/resume",
+    link: "/Resume",
   },
   {
     title: "Projects",

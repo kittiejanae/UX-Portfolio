@@ -94,8 +94,8 @@ export const AboutWrapper = styled.div`
 export const AboutMe = styled.p`
   width: 100%;
   font-size: 12px;
-  height: 80%;
   line-height: 14px;
+  height: 80%;
   color: black;
 
   @media screen and (min-width: 768px) {

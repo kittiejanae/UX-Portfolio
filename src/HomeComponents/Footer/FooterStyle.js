@@ -8,6 +8,7 @@ export const FooterWrapper = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 6vw;
+  margin-bottom: 2vw;
   padding: 0;
 `;
 
@@ -17,16 +18,11 @@ export const FooterH1 = styled.h2`
   margin: 0;
   margin-left: 16vw;
   padding: 0;
-
-  @media screen and (min-width: 786px) {
-    font-size: 2.7vw;
-    line-height: 2.9vw;
-  }
 `;
 
 export const ReviewsList = styled.ul`
-  max-height: 15vw;
   width: 80vw;
+  height: 40vw;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -44,18 +40,18 @@ export const ReviewsList = styled.ul`
 
 export const Review = styled.li`
   width: 100%;
-  height: 30%;
+  height: 40vw;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 35%;
+  bottom: 20%;
 
   @media screen and (min-width: 786px) {
     height: 100%;
-    bottom: 0;
+    bottom: 20%;
   }
 `;
 
@@ -89,19 +85,9 @@ export const PersonTitle = styled.h2`
   text-align: left;
   width: 100%;
   margin: 0;
-
-  @media screen and (min-width: 786px) {
-    font-size: 2.3vw;
-    line-height: 2.5vw;
-  }
 `;
 export const PersonReview = styled.p`
   text-align: left;
   width: 100%;
   color: black;
-
-  @media screen and (min-width: 768px) {
-    font-size: 1.5vw;
-    line-height: 1.7vw;
-  }
 `;

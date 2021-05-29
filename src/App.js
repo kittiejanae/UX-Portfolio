@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           }}
         />
         <Route path="/Contact" component={Contact} />
+        <Route path="/About" component={AboutMe} />
         <Route
           path="/Heirloom"
           component={() => {

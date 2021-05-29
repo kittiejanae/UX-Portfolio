@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const BackToTopWrapper = styled(Link)`
   width: 80vw;
   height: 8vw;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

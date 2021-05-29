@@ -9,8 +9,8 @@ const CardsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -24vw;
-  margin-bottom: 4vw;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
 
   h2 {
     width: 100%;
@@ -20,7 +20,7 @@ const CardsWrapper = styled.div`
 
   @media screen and (min-width: 768px) {
     transition: 0.8s all ease;
-    margin-top: 24vw;
+    margin-top: 4vw;
   }
 `;
 

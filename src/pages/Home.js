@@ -13,7 +13,6 @@ import Footer from "../HomeComponents/Footer/Footer";
 import Hero from "../HomeComponents/Hero/Hero/Hero";
 import Dropdown from "../Header/Dropdown";
 import Aos from "aos";
-import About from "../HomeComponents/About";
 import Cards from "../HomeComponents/ProjectGallery/Cards";
 
 const Section = lazy(() => import("../HomeComponents/Hero/Section/Section"));
@@ -40,7 +39,6 @@ const Home = () => {
       <Dropdown toggle={toggle} isOpen={isOpen} />
       <Hero />
       <Suspense fallback={<p>loading...</p>}>
-        <About />
         <Cards />
         {/* <Section /> */}
       </Suspense>
