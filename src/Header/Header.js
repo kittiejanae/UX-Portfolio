@@ -3,7 +3,6 @@ import {
   HeaderWrapper,
   HeaderBox,
   HeaderTitle,
-  Line,
   MenuBars,
   NavMenu,
   NavMenuLinks,

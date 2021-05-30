@@ -66,7 +66,7 @@ const AboutSection = styled.div`
   align-items: center;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  width: 100%;
+  // width: 100%;
 
   @media screen and (min-width: 768px) {
     transition: 0.8s all ease;
