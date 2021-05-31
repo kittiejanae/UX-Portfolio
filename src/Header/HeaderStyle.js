@@ -91,7 +91,7 @@ export const MenuBars = styled.div`
     background-size: contain;
     cursor: pointer;
     position: absolute;
-    top: 25px;
+    top: 22px;
     right: 4vw;
     transform: translate(-50%, 25%);
   }

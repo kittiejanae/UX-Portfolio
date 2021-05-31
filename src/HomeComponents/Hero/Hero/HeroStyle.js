@@ -63,6 +63,7 @@ export const HeroAboutWrapper = styled.div`
 export const HeroImage = styled.img`
   width: 40%;
   margin-right: 2vw;
+  margin-left: 2vw;
   height: auto;
   border-radius: 12px;
   box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.5),

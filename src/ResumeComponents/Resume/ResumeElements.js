@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ResumeWrapper = styled.div`
-  width: 80vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,8 +194,6 @@ export const LastTextContent = styled.p`
   margin-right: 3vw;
 
   @media screen and (min-width: 786px) {
-    font-size: 1.5vw;
-    line-height: 1.7vw;
     margin-top: 2vw;
   }
 `;
@@ -280,11 +278,6 @@ export const Degree = styled.p`
   margin: 0;
   padding: 0;
   text-align: center;
-
-  @media screen and (min-width: 786px) {
-    font-size: 1.5vw;
-    line-height: 1.7vw;
-  }
 `;
 
 export const ExperienceWrap = styled.div``;

@@ -14,7 +14,7 @@ const CardsWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 2vw;
+  margin-top: 4vw;
   margin-bottom: 8vw;
 
   h2 {
@@ -73,8 +73,8 @@ const CardsBox = styled.div`
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background: white;
     z-index: 10;
     right: 60px;
@@ -84,10 +84,17 @@ const CardsBox = styled.div`
     color: #0d4215;
     border: 0.5px solid #0d4215;
     border-radius: 8px;
+    margin-top: 0vw;
 
     &:hover {
       background: #0d4215;
       color: white;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 50px;
+      width: 50px;
+      margin-top: 0vw;
     }
   }
 
@@ -97,7 +104,11 @@ const CardsBox = styled.div`
 
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    font-size: 2rem;
+    font-size: 1rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   .swiper-slide {
