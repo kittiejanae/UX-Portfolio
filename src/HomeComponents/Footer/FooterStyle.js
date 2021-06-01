@@ -32,7 +32,6 @@ export const ReviewsList = styled.ul`
   align-items: center;
   margin-left: 0;
   margin-top: 2vw;
-  background: blue;
 
   @media screen and (min-width: 786px) {
     height: 25vw;
