@@ -42,7 +42,7 @@ const ImgWrap = styled.figure`
   justify-content: center;
   align-items: center;
   width: auto;
-  height: 200px;
+  height: 150px;
   display: inline-block;
 
   @media screen and (min-width: 768px) {
