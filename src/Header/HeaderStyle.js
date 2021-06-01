@@ -85,13 +85,13 @@ export const MenuBars = styled.div`
 
   @media screen and (max-width: 768px) {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-image: url(${menu});
     background-size: contain;
     cursor: pointer;
     position: absolute;
-    top: 22px;
+    top: 18px;
     right: 4vw;
     transform: translate(-50%, 25%);
   }
