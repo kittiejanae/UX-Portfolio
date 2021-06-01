@@ -10,7 +10,8 @@ export const BackToTopWrapper = styled(Link)`
   float: left;
   flex-flow: column;
   text-decoration: none;
-  margin-bottom: 4vw;
+  position: absolute;
+  bottom: 0;
 `;
 
 export const BackToTopImage = styled.img`
@@ -34,8 +35,6 @@ export const BackToTopImage = styled.img`
 
 export const BackToTopP = styled.p`
   text-decoration: none;
-  font-size: 1.5vw;
-  line-height: 1.7vw;
   width: 100%;
   text-align: right;
   margin-right: -8vw;

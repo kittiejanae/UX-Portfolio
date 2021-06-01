@@ -6,7 +6,7 @@ import React, {
   useEffect,
 } from "react";
 import { useLocation } from "react-router-dom";
-import BackToTop from "../BackToTop/BackToTop";
+// import BackToTop from "../BackToTop/BackToTop";
 import Header from "../Header/Header";
 // import Extra from "../HomeComponents/Extra";
 import Footer from "../HomeComponents/Footer/Footer";
@@ -43,7 +43,7 @@ const Home = () => {
       </Suspense>
       {/* <Extra /> */}
       <Footer />
-      <BackToTop />
+      {/* <BackToTop /> */}
     </div>
   );
 };

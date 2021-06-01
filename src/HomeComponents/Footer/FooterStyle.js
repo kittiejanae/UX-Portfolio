@@ -7,7 +7,7 @@ export const FooterWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 8vw;
+  margin-top: 20vw;
   margin-bottom: 2vw;
   padding: 0;
 `;
@@ -22,7 +22,7 @@ export const FooterH1 = styled.h2`
 
 export const ReviewsList = styled.ul`
   width: 80vw;
-  height: 40vw;
+  height: 80vw;
   padding-top: 0;
   padding-left: 0;
   padding-right: 0;
@@ -31,7 +31,8 @@ export const ReviewsList = styled.ul`
   justify-content: center;
   align-items: center;
   margin-left: 0;
-  margin-top: 0;
+  margin-top: 2vw;
+  background: blue;
 
   @media screen and (min-width: 786px) {
     height: 25vw;
@@ -40,14 +41,14 @@ export const ReviewsList = styled.ul`
 
 export const Review = styled.li`
   width: 100%;
-  height: 40vw;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 0;
 
   @media screen and (min-width: 786px) {
     height: 100%;
@@ -81,7 +82,7 @@ export const ReviewText = styled.div`
   float: right;
 `;
 
-export const PersonTitle = styled.h2`
+export const PersonTitle = styled.h3`
   text-align: left;
   width: 100%;
   margin: 0;
